@@ -3,6 +3,7 @@ body{
     color: rgb(0, 255, 0);
     font-family: monospace;
     margin: 0;
+    text-align: center;
 }
 
 .container{
@@ -16,7 +17,15 @@ body{
     margin: 0;
     white-space: nowrap;
     overflow: hidden;
-    animation: typewriter 4s steps(12, end), caret-blink, .8s ease infinite;
+    animation: typewriter 4s steps(40, end), caret-blink, .8s ease infinite;
+    border-right: 10px solid rgb(153, 255, 0);
+}
+
+.container p{
+    margin: 0;
+    white-space: nowrap;
+    overflow: hidden;
+    animation: typewriter 4s steps(40, end), caret-blink, .8s ease infinite;
     border-right: 10px solid rgb(153, 255, 0);
 }
 
