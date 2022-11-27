@@ -1,23 +1,41 @@
-*{
+* {
     font-family: 'Courier New', Courier, monospace;
 }
 
-#screen{
+#screen {
     position: relative;
     width: 500px;
     height: 500px;
     background-color: green;
 }
 
-#scanlines, #bezel {
+#scanlines,
+#bezel {
     position: absolute;
     width: 100%;
     height: 100%;
     top: 0;
     left: 0;
+    pointer-events: none;
 }
 
-#content{
+#scanlines {
+    opacity: 25%;
+}
+
+#content {
     padding: 50px;
-    color: yellowgreen;
+    color: rgb(184, 241, 68);
+    font-size: 20px;
+    text-shadow: 1px 1px 1px rgb(176, 200, 128);
+}
+
+.noselect {
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
 }
