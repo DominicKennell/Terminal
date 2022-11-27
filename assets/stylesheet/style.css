@@ -2,6 +2,12 @@
     font-family: 'Courier New', Courier, monospace;
 }
 
+body{
+    background-color: black;
+    display: grid;
+    text-align: center;
+}
+
 #screen {
     position: relative;
     width: 500px;
@@ -26,8 +32,33 @@
 #content {
     padding: 50px;
     color: rgb(184, 241, 68);
-    font-size: 20px;
     text-shadow: 1px 1px 1px rgb(176, 200, 128);
+}
+
+h1{
+    width: max-content;
+}
+
+h1::before, h1::after{
+    content: "";
+    position: absolute;
+    top: 0;
+    right:0;
+    bottom: 0;
+    left: 0;
+}
+
+h1::before{
+    background-color: green;
+    animation:
+    typewriter 10s steps(12) forwards;
+}
+
+
+@keyframes typewriter{
+    to{
+        left: 100%;
+    }
 }
 
 .noselect {
